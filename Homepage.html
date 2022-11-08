@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="common.css">
+    </link>
+    <script>
+
+        function pageRedirect(page) {
+
+
+            if(page=="c") {
+                window.location = "cdetails.html";
+            } else if(page=="c++") {
+                window.location = "cplus.html";
+            } else {
+                window.location = "java.html";
+            }
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <marquee id="scroll">Dasara sale Upto 20% Off</marquee>
+    <P id="user">USERNAME</P>
+    <input type="submit" class="right" value="logout">
+
+
+
+<section>
+    <form id="cimg" style="">
+        <img src="cprog.png" id="c" onclick='pageRedirect("c")'>
+    </form>
+    <cprice>1000 rs only</cprice>
+
+</section>
+
+    
+
+
+
+    
+
+    <form id="cplusimg">
+        <img src="cplus.png" id="cplus" onclick='pageRedirect("c++")'>
+    </form>
+    <cplusprice>2000 rs only</cplusprice>
+
+    <form id="javaimgg">
+        <img src="editjava.png" id="jimage" onclick='pageRedirect("java")'>
+    </form>
+    <javaprice>3000 rs only</javaprice>
+
+
+
+</body>
+<script>
+    var getemail = localStorage.getItem('uemail');
+    document.getElementById("user").innerHTML = getemail;
+
+
+</script>
+
+</body>
+
+</html>

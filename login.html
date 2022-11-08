@@ -1,0 +1,75 @@
+
+<html>
+    <title>
+      Login
+    </title>
+<head>
+   
+    <link rel="stylesheet"   href="login.css">
+ <script type="text/javascript">
+            function ffn(event) 
+  {
+         event.preventDefault();
+   var email= document.getElementById("email").value;
+   var password= document.getElementById("pass").value;
+   let ab=localStorage.getItem("details");
+        abc= JSON.parse(ab);
+       flag=false
+        for(i=0;i<abc.length;i++)
+        {
+          if(abc[i].uemail==email)
+          {
+            if(abc[i].password=password)
+            
+            {
+              flag=true 
+            }
+              else{
+               
+              } 
+          }
+          else{
+               
+              }
+        }
+        if(flag==false)
+        {
+          alert("Incorrect pass")
+
+        }
+        else{
+          alert("sucress")
+          window.location="Homepage.html"
+
+        }
+
+ }
+        </script>
+
+</head>
+
+
+   
+   
+    <body>
+        
+       <center>
+            <H1>WELCOME TO ECOMMERCE WEBSITE</H1>
+            <br>
+            <h2>PLEASE LOGIN TO CONTINUE</h2>
+            <form>
+                <br><br><br>
+            <label>Email</label>
+            <input type="email" id="email" name="mail" placeholder="email">
+            <br><br><br>
+            <label>Password</label>
+            <input type="password"  id="pass" name="pass" placeholder="password">
+            <br><br><br>
+            
+            <input type="button" value="click"  onclick="ffn(event)">
+        </form>
+        </center>
+       
+        
+    </body>
+</html>

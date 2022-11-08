@@ -1,0 +1,23 @@
+
+body{
+    background-color:rgb(248, 158, 106);
+}
+H1
+{
+    color:  rgb(127, 137, 135);
+    margin-top: 40px;
+}
+H2
+{
+       color:  rgb(127, 137, 135);
+
+}
+form{
+    background-color: rgb(127, 137, 135);
+    width: 500px;
+    height: 300px;
+    border-radius: 50%;
+  border: 1px solid #13e213; 
+margin-top:50px;
+position:relative;
+}
